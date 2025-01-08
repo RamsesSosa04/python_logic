@@ -11,5 +11,6 @@ def obtener_nombre(nombre):
     iniciales = f"{nombre[0].upper()}.{apellido[0].upper()}."
     return iniciales
 
-print(obtener_nombre("Ramses Sosa"))    
+print(obtener_nombre("Ramses Sosa"))  
+print(obtener_nombre("Aylyn Perez"))  
     
