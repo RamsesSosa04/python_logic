@@ -3,7 +3,6 @@
 #The output should be two capital letters with a dot separating them.
 #It should look like this:
 #Sam Harris => S.H
-#patrick feeney => P.F
 
 def obtener_nombre(nombre):
     nombre, apellido = nombre.split()
