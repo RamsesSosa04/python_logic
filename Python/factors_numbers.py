@@ -7,3 +7,10 @@
 #You can use the mod operator (%) in most languages to check for a remainder
 #For example 2 is not a factor of 7 because: 7 % 2 = 1
 #Note: base is a non-negative number, factor is a positive number.
+
+def check_for_factor(base, factor):
+    if base % factor == 0:
+        return True
+    elif base % factor != 0: 
+        return False
+print(check_for_factor(10, 12))
