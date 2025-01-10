@@ -1,3 +1,14 @@
+"""
+  Performs a basic mathematical operation on two values.
+
+  Args:
+      operator: The operation to perform ('+', '-', '*', '/').
+      value1: The first value.
+      value2: The second value.
+
+  Returns:
+      The result of the operation.
+  """
 def basic_op(operator, value1, value2):
     if operator == '+':
         return value1 + value2
