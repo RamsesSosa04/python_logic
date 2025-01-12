@@ -6,7 +6,12 @@ Task
 Given a year, return the century it is in.
 """
 def century(year):
-    x = year // 100
+    century = year // 100
     
-    return x 
+    if year % 100 == 0:
+        return century
+    else: 
+        return century + 1
+     
 print(century(1950))
+print(century(2000))
