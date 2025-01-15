@@ -7,6 +7,7 @@
   Returns:
     Una cadena representando el número en forma expandida.
 """
+
 def expanded_form(num):
   num_str = str(num)
   expanded = []
