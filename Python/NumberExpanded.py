@@ -1,3 +1,12 @@
+"""
+  Convierte un número a su forma expandida.
+
+  Args:
+    num: El número a convertir.
+
+  Returns:
+    Una cadena representando el número en forma expandida.
+"""
 def expanded_form(num):
   num_str = str(num)
   expanded = []
