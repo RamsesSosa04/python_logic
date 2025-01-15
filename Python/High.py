@@ -1,3 +1,11 @@
+"""Encuentra la palabra con la puntuación más alta en una cadena.
+
+  Args:
+    cadena: Una cadena de palabras.
+
+  Returns:
+    La palabra con la puntuación más alta. Si hay empates, devuelve la primera.
+"""
 def high(x):
     puntuaciones = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7,
                  'h': 8, 'i': 9, 'j': 10, 'k': 11, 'l': 12, 'm': 13,
@@ -16,4 +24,4 @@ def high(x):
             if words.index(w) < words.index(word):
                 word = w
     return w
-print(high("hola hola"))
+print(high("ubud taxi"))
