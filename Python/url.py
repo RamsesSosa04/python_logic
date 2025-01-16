@@ -1,29 +1,33 @@
-from urllib.parse import urlparse
-
-def extraer_dominio(url):
+def extraer_dominio_manual(url):
   """
-  Extrae el nombre de dominio de una URL.
+  Extrae el nombre de dominio de una URL de forma manual (simplificada).
 
   Args:
     url: La URL como cadena de texto.
 
   Returns:
-    El nombre de dominio como cadena de texto.
+    El nombre de dominio como cadena de texto, o None si no se encuentra.
   """
 
-  # Analiza la URL utilizando urllib.parse
-  parsed_uri = urlparse(url)
-  # Extrae el netloc (nombre de red), que incluye el subdominio y el dominio
-  result = parsed_uri.netloc
-  # Elimina el subdominio si existe (por ejemplo, 'www.')
-  result = result.split('.')[-2]
-  return result
+  # Eliminar el protocolo (http://, https://) y cualquier cosa después del dominio
+  parts = url.split('/')
+  if len(parts) > 2:
+      host = parts[2]
+  else:
+      return None
+
+  # Eliminar el subdominio (www.) si existe
+  parts = host.split('.')
+  if len(parts) > 2:
+      return parts[-2]
+  else:
+      return parts[0]
 
 # Ejemplos de uso:
 url1 = "http://github.com/carbonfive/raygun"
 url2 = "http://www.zombie-bites.com"
 url3 = "https://www.cnet.com"
 
-print(extraer_dominio(url1))  # Salida: github
-print(extraer_dominio(url2))  # Salida: zombie-bites
-print(extraer_dominio(url3))  # Salida: cnet
+print(extraer_dominio_manual(url1))  # Salida: github
+print(extraer_dominio_manual(url2))  # Salida: zombie-bites
+print(extraer_dominio_manual(url3))  # Salida: cnet
