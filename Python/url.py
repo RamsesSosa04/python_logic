@@ -1,6 +1,15 @@
 from urllib.parse import urlparse
 
 def extraer_dominio(url):
+  """
+  Extrae el nombre de dominio de una URL.
+
+  Args:
+    url: La URL como cadena de texto.
+
+  Returns:
+    El nombre de dominio como cadena de texto.
+  """
 
   # Analiza la URL utilizando urllib.parse
   parsed_uri = urlparse(url)
