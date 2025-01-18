@@ -1,3 +1,12 @@
+"""
+  Finds the maximum and minimum values in a list of integers.
+
+  Args:
+    numbers: A list of integers.
+
+  Returns:
+    The maximum and minimum integers in the list.
+"""
 def minimum(arr):
     min_value = arr[0]
     for num in arr[1:]:
