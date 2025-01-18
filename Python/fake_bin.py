@@ -1,3 +1,12 @@
+"""
+  Reemplaza los dígitos menores que 5 por '0' y los mayores o iguales a 5 por '1'.
+
+  Args:
+    cadena: La cadena de dígitos a modificar.
+
+  Returns:
+    La cadena modificada.
+"""
 def fake_bin(x):
     result = ""
     for digit in x:
