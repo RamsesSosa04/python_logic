@@ -8,7 +8,6 @@ def sumar_positivos(numeros):
   Returns:
     La suma de los números positivos, o 0 si no hay ninguno.
   """
-
   suma = 0
   for numero in numeros:
     if numero > 0:
