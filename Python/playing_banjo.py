@@ -7,7 +7,6 @@
   Returns:
     A string indicating whether the person plays banjo.
 """
-
 def areYouPlayingBanjo(name):
     if name.lower().startswith('r'):
         return f"{name} plays banjo"
