@@ -14,4 +14,4 @@ def areYouPlayingBanjo(name):
     else:
         return f"{name} does not play banjo"
     
-print(areYouPlayingBanjo('Ramses'))
+print(areYouPlayingBanjo('Jose'))
