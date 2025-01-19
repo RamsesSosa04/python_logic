@@ -15,7 +15,6 @@ def sumar_positivos(numeros):
       suma += numero
   return suma
 
-# Ejemplo de uso:
 lista_numeros = [1, -4, 7, 12]
 resultado = sumar_positivos(lista_numeros)
 print(resultado)  
