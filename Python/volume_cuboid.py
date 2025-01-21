@@ -1,0 +1,11 @@
+"""
+  Calcula el volumen de un cuboide.
+
+  Args:
+    largo: La longitud del cuboide.
+    ancho: El ancho del cuboide.
+    alto: La altura del cuboide.
+
+  Returns:
+    El volumen del cuboide.
+"""
