@@ -10,4 +10,5 @@
     El volumen del cuboide.
 """
 def calcular_volumen(largo, ancho, alto):
-    return
+    volumen = largo * ancho * largo
+    return volumen
