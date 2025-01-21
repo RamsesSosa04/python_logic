@@ -7,7 +7,6 @@ of the second quarter; and month 11 (November), is part of the fourth quarter.
 """
 
 
-
 def quarter_of(month):
     if month < 3 and month > 0:
         return 1
