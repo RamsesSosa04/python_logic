@@ -9,3 +9,5 @@
   Returns:
     El volumen del cuboide.
 """
+def calcular_volumen(largo, ancho, alto):
+    return
